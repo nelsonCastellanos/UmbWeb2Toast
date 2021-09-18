@@ -13,10 +13,6 @@ import android.view.ViewGroup;
 public class ToastFragment extends Fragment {
 
 
-    public static ToastFragment newInstance() {
-        return new ToastFragment();
-    }
-
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
