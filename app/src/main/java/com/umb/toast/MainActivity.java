@@ -27,8 +27,7 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.toast_layout_root),false
         );
         TextView textToast = layout.findViewById(R.id.text_toast);
-        textToast.setText("Hello toast!");
-
+        textToast.setText(getResources().getString(R.string.app_toast));
         Toast toast = new Toast(context);
         toast.setDuration(Toast.LENGTH_SHORT);
         toast.setView(layout);
