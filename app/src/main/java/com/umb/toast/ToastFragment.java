@@ -1,7 +1,5 @@
 package com.umb.toast;
 
-import androidx.lifecycle.ViewModelProvider;
-
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -14,7 +12,6 @@ import android.view.ViewGroup;
 
 public class ToastFragment extends Fragment {
 
-    private ToastViewModel mViewModel;
 
     public static ToastFragment newInstance() {
         return new ToastFragment();
@@ -25,12 +22,4 @@ public class ToastFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.toast_fragment, container, false);
     }
-
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(ToastViewModel.class);
-        // TODO: Use the ViewModel
-    }
-
 }

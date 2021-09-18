@@ -1,0 +1,38 @@
+# Application Case I
+## UMB
+
+[![N|Solid](data:image/png;base64,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)](https://www.android.com/)
+
+Android application for the development of the activity "Application Case I" show a toast.
+
+## Competences to develop
+It offers solutions to the proposed cases through coding in Android implements a message through a Toast.
+
+## What should you do?
+Transcribe the code that is illustrated in the example on page 25 (Complete code that implements a message through a Toast), build the application, explain its functionality and describe its characteristics.
+
+## Homework delivery
+* Application with the complete Code that implements a message through a Toast.
+* In a video explain its functionality and describe its characteristics
+
+## Tech
+
+Dillinger uses a number of open source projects to work properly:
+
+- [Java] - Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. 
+- [Android Studio] - Android Studio is the official integrated development environment for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development.
+
+
+## Installation
+
+Open the project with android studio and run it or install the executable
+
+## License
+
+MIT
+
+**Free Software, Hell Yeah!**
+
+[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
+   [Java]: <https://www.java.com/en>
+   [Android Studio]:  <https://developer.android.com/studio>

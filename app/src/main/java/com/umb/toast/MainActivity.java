@@ -16,20 +16,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        showToast();
+    }
 
+    private void showToast(){
         Context context = getApplicationContext();
-        CharSequence text = "Hello toast!";
-        int duration = Toast.LENGTH_SHORT;
         LayoutInflater inflater = getLayoutInflater();
         View layout = inflater.inflate(
             R.layout.toast_fragment,
-            findViewById(R.id.toast_layout_root),
-                false
+            findViewById(R.id.toast_layout_root),false
         );
         TextView textToast = layout.findViewById(R.id.text_toast);
-        textToast.setText(text);
+        textToast.setText("Hello toast!");
+
         Toast toast = new Toast(context);
-        toast.setDuration(duration);
+        toast.setDuration(Toast.LENGTH_SHORT);
         toast.setView(layout);
         toast.show();
     }
