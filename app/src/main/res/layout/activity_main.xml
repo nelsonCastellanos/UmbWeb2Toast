@@ -1,15 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#C8C8C8">
+    android:background="#C8C8C8"
+    tools:context=".MainActivity">
 
-    <include
-        layout="@layout/toast_fragment"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="119dp" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/toast_layout_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#C8C8C8"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="286dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="294dp"
+                android:layout_marginTop="25dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:textAlignment="center">
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="255dp"
+                        android:layout_height="177dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        tools:background="@tools:sample/avatars[8]" />
+
+                    <TextView
+                        android:id="@+id/editTextTextPersonName3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:ems="10"
+                        android:fontFamily="monospace"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:text="Nelson Castellanos"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple_200"
+                        android:textSize="25dp" />
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Software developer"
+                        android:textAlignment="center"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/todo"
+                android:layout_width="237dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:keyboardNavigationCluster="false"
+                android:padding="20dp"
+                android:text="TODO: "
+                android:textColor="#546E7A"
+                android:textSize="20dp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="20dp">
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="382dp"
+                    android:layout_height="match_parent"
+                    android:text="Upload homework" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="20dp">
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="382dp"
+                    android:layout_height="match_parent"
+                    android:text="Study Java" />
+            </androidx.cardview.widget.CardView>
+
+
+            <include
+                layout="@layout/toast_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="54dp"
+                tools:layout_editor_absoluteY="119dp" />
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|end"
+                android:backgroundTint="@color/purple_200"
+                android:clickable="true"
+                android:src="@android:drawable/ic_menu_myplaces"
+                app:rippleColor="#fff"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

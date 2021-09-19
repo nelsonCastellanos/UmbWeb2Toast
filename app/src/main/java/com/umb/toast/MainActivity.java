@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -16,8 +18,25 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         showToast();
+        assignAction();
     }
 
+    /**
+     * generate listener to button, after show toast
+     */
+    private void assignAction() {
+        FloatingActionButton button= (FloatingActionButton)findViewById(R.id.floatingActionButton);
+        button.setOnClickListener(new View.OnClickListener(){
+        @Override
+        public void onClick(View view) {
+                showToast();
+           }
+        });
+    }
+
+    /**
+     * Show toast modal on screen
+     */
     private void showToast(){
         Context context = getApplicationContext();
         LayoutInflater inflater = getLayoutInflater();
